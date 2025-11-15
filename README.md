@@ -1,55 +1,134 @@
-# 🧭 SalesPulse: Interactive Power BI Dashboard for KPI & Performance Analytics  
+# 🧭 SalesPulse: Power BI Sales Performance & YOY Analytics Dashboard
 
 ## 📊 Overview  
-**SalesPulse** is an interactive **Power BI Dashboard** designed to deliver deep insights into business performance by analyzing **sales trends, customer behavior, and KPI achievements**.  
-It empowers decision-makers with real-time visual analytics across **products, cities, and customers**, enabling strategic, data-driven decisions.  
+**SalesPulse** is an interactive **Power BI dashboard** designed to analyze and compare **2023 vs 2024 sales performance** across multiple dimensions such as products, cities, states, and customer segments.  
+The dashboard delivers end-to-end **sales analytics, YOY comparison, KPI tracking, and target achievement monitoring**, enabling stakeholders to make informed, data-driven business decisions.
 
 ---
 
-## 🚀 Features  
-- **Dynamic KPI Tracking** – Visualizes Total Sales, Quantity Sold, Orders, and Customer Growth.  
-- **Goal vs. Actual Comparison** – Highlights progress toward business targets with intuitive visuals.  
-- **Category & Region Analysis** – Displays performance breakdowns by product category and city.  
-- **Top 100 Customer Leaderboard** – Identifies key customers based on sales and quantity sold.  
-- **Interactive Filtering** – Allows users to explore data from multiple perspectives seamlessly.  
-- **Professional Visualization Design** – Clean layout with rich charts, maps, and trend indicators.  
+## 🚀 Key Features  
+
+- **YOY Performance Comparison (2024 vs 2023)**  
+  - Compare revenue, orders, quantity sold, and customer growth across years.  
+  - Analyze trends at yearly, quarterly, and monthly levels using DAX time-intelligence.
+
+- **KPI & Target Tracking**  
+  - Tracks core KPIs: **Total Sales, Total Orders, Quantity Sold, Customer Count**.  
+  - Implements a **Target Achievement Framework** with annual & quarterly goals, achieved vs pending metrics, and variance analysis.
+
+- **Toolkit Page (Enhanced User Experience)**  
+  - Dedicated **Toolkit Page** with slicers, bookmarks, navigation buttons, and dynamic filters.  
+  - Improves dashboard usability and enables fast drill-down and ad-hoc analysis.
+
+- **Customer & Category Insights**  
+  - **Top 100 Customer Leaderboard** based on revenue and quantity sold.  
+  - Performance breakdown by **product category, city, and state**.  
+  - Identification of high-performing regions, products, and key customers.
+
+- **Interactive Visuals**  
+  - KPI cards, line charts, bar charts, donut charts, and map visuals.  
+  - Dynamic filtering by year, quarter, category, location, and customer.
+
+---
+
+## 📂 Dataset Details  
+
+The analysis is based on two structured CSV datasets:
+
+- **Sales data 2023** – `Sales data 2023.csv`  
+- **Sales data 2024** – `Sales data 2024.csv`  
+
+**Combined Dataset Highlights:**  
+- **Total Records:** 2,178+ sales transactions  
+- **Years Covered:** 2023 and 2024  
+- **Unique Customers:**  
+  - 2023 → 509  
+  - 2024 → 582  
+- **Products:** 20 product IDs  
+- **Product Categories:** 5  
+- **Cities:** 10  
+- **States:** 6  
+- **Quarters:** Q1–Q4  
+
+Core columns include:
+- `order_id`, `customer_id`, `product_id`  
+- `date` / `Date`  
+- `city` / `City`, `state` / `State`  
+- `product_category` / `Product_Category`  
+- `sales` / `Sales`  
+- `quantity_sold` / `Quantity_Sold`  
+- `Quarter`  
 
 ---
 
 ## 🛠️ Tools & Technologies  
-- **Power BI** – For dashboard creation and visualization  
-- **DAX (Data Analysis Expressions)** – For custom KPIs and calculations  
-- **Data Modeling** – For building relationships between multiple data tables  
-- **Excel / CSV Data Sources** – For data ingestion and preprocessing  
+
+- **Power BI** – Data modeling, dashboard design, visualization  
+- **DAX (Data Analysis Expressions)** – Custom measures, KPIs, YOY and time-intelligence calculations  
+- **Power Query** – Data loading, cleaning, transformation  
+- **Excel / CSV** – Source data preparation and storage  
 
 ---
 
-## 📈 Key Insights Delivered  
-- Identifies **high-performing products and regions** driving revenue growth  
-- Tracks **sales performance trends** across months and quarters  
-- Highlights **goal achievement gaps** for proactive decision-making  
-- Recognizes **top customers** contributing to business success  
+## 📈 Analytics & KPIs  
+
+SalesPulse computes and visualizes key business metrics, including:
+
+- **Total Sales**  
+- **Total Orders**  
+- **Total Quantity Sold**  
+- **Customer Count**  
+- **YOY Growth % (2024 vs 2023)**  
+- **Month-over-Month Trends**  
+- **Category-wise and City-wise Sales Contribution**  
+- **Top Customer Rankings (Top 100 customers)**  
+- **Target vs Achieved Metrics** (annual & quarterly)
 
 ---
 
 ## ⚙️ How It Works  
-1. **Import Data:** Load raw sales, customer, and order data (CSV/Excel).  
-2. **Model Data:** Build relationships between datasets (orders, customers, products).  
-3. **Create Measures:** Define KPIs and metrics using DAX formulas.  
-4. **Design Dashboard:** Build visual components for trend analysis, regional insights, and KPI tracking.  
-5. **Publish & Share:** Deploy dashboard via Power BI Service for web or mobile access.  
+
+1. **Data Import**  
+   - Load `Sales data 2023.csv` and `Sales data 2024.csv` into Power BI.  
+
+2. **Data Cleaning & Modeling**  
+   - Standardize column names (city/city, state/State, etc.) and data types.  
+   - Create relationships between fact tables and any supporting dimension tables (e.g., Date, Products, Customers).
+
+3. **DAX Measures & Calculations**  
+   - Create DAX measures for total sales, orders, quantity, YOY growth %, MoM trends, category share %, customer ranking, and target tracking.  
+
+4. **Dashboard Design**  
+   - Build multiple report pages:
+     - **Overview / KPI Page**  
+     - **YOY Comparison Page (2024 vs 2023)**  
+     - **Category & Region Analysis Page**  
+     - **Customer Insights / Top 100 Customers**  
+     - **Toolkit Page** for navigation and advanced filtering  
+
+5. **Publishing & Sharing**  
+   - Publish the report to **Power BI Service** for access via web and mobile.  
+   - Configure row-level filters and usage metrics if required.
 
 ---
 
 ## 📷 Dashboard Preview  
-<img width="1389" height="788" alt="image" src="https://github.com/user-attachments/assets/686ab93d-842e-4ae8-baf4-f3c0ce03cc2f" />
-<img width="1395" height="787" alt="image" src="https://github.com/user-attachments/assets/86f88618-8dca-4d01-b6f0-90cc50d9ff9e" />
+
+> *Add screenshots or GIFs from your Power BI report here (Overview Page, YOY Page, Toolkit Page, etc.)*
 
 ---
 
 ## 🧠 Skills Demonstrated  
-Power BI, DAX, Data Modeling, KPI Visualization, Data Cleaning, Analytical Thinking,  
-Trend Analysis, Performance Tracking, Business Intelligence, Dashboard Design  
+
+- Power BI  
+- DAX (Time Intelligence, Ranking, KPIs)  
+- Data Modeling & Relationships  
+- Data Cleaning & Transformation (Power Query)  
+- YOY & Trend Analysis  
+- KPI Development & Target Tracking  
+- Dashboard Design & UX (Toolkit Page, navigation)  
+- Business Intelligence & Storytelling with Data  
+- Exploratory Data Analysis (EDA)  
 
 ---
 
@@ -60,7 +139,12 @@ Trend Analysis, Performance Tracking, Business Intelligence, Dashboard Design
 ---
 
 ## 🏁 Project Impact  
-This dashboard provides **actionable sales intelligence** that enhances decision-making, optimizes resource allocation, and uncovers hidden business opportunities.  
-By translating raw sales data into clear visual insights, it supports **strategic growth and performance monitoring** across multiple dimensions.  
+
+SalesPulse transforms raw multi-year sales data into an intuitive, interactive BI solution that supports:  
+
+- Faster and more accurate **performance monitoring**  
+- Clear visibility into **YOY changes and target achievement**  
+- Identification of **high-value customers, products, and regions**  
+- **Data-driven decision-making** for planning, forecasting, and strategy.  
 
 ---
