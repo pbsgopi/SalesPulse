@@ -113,8 +113,9 @@ SalesPulse computes and visualizes key business metrics, including:
 ---
 
 ## 📷 Dashboard Preview  
+<img width="1389" height="788" alt="Screenshot 2025-11-12 195003" src="https://github.com/user-attachments/assets/ce13d0be-8a20-444b-a4da-2989ec473975" />
+<img width="1296" height="732" alt="Screenshot 2025-11-08 120019" src="https://github.com/user-attachments/assets/1c13811b-38d7-4b28-b481-b177a6ecffd5" />
 
-> *Add screenshots or GIFs from your Power BI report here (Overview Page, YOY Page, Toolkit Page, etc.)*
 
 ---
 
